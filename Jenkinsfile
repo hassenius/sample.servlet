@@ -12,6 +12,7 @@ node {
       withMaven(maven: 'maven', mavenLocalRepo: '.repository') {
         sh 'mvn clean install'
       }
+    }
       
     stage('Build image') {
 
